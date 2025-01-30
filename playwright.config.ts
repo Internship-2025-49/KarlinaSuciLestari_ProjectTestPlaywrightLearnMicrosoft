@@ -54,10 +54,23 @@ export default defineConfig({
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] },
     // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+
+    {
+      name: 'Mobile Safari',
+      use: { ...devices['iPhone 12'] },
+    },
+
+    {
+      name: 'custom-iPhone12Pro',
+      use: {
+        userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like macOS X)...",
+        viewport: { width: 390, height: 664 },
+        deviceScaleFactor: 3,
+        isMobile: true,
+        hasTouch: true,
+        defaultBrowserType: "webkit",
+      },
+    },
 
     /* Test against branded browsers. */
     // {
