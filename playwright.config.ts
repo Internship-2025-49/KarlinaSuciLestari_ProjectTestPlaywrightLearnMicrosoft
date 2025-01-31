@@ -16,10 +16,17 @@ export default defineConfig({
   // globalTimeout: 600000,
   // reporter: 'list',
 
-  build: {
-    external: ['**/*bundle.js'],
+  // build: {
+  //   external: ['**/*bundle.js'],
+  // },
+
+  expect: {
+    timeout: 10000,
+    toMatchSnapshot: {
+      maxDiffPixels: 10,
+    },
   },
-  
+
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
