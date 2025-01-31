@@ -20,12 +20,14 @@ export default defineConfig({
   //   external: ['**/*bundle.js'],
   // },
 
-  expect: {
-    timeout: 10000,
-    toMatchSnapshot: {
-      maxDiffPixels: 10,
-    },
-  },
+  // expect: {
+  //   timeout: 10000,
+  //   toMatchSnapshot: {
+  //     maxDiffPixels: 10,
+  //   },
+  // },
+
+  //globalSetup: './global-setup',
 
   testDir: './tests',
   /* Run tests in files in parallel */
